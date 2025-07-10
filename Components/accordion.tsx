@@ -25,12 +25,7 @@ function AccordionItem({
   className,
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Item>) {
-  return (
-    <AccordionPrimitive.Item
-      className={cn(className)} // ✅ بدون الخط الفاصل
-      {...props}
-    />
-  );
+  return <AccordionPrimitive.Item className={cn(className)} {...props} />;
 }
 
 function AccordionTrigger({
